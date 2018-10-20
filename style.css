@@ -1,0 +1,13 @@
+body {
+  background-color: #fcdfa9;
+}
+
+img {
+  display: block;
+  float: left;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  padding: 15px;
+}
