@@ -2,7 +2,7 @@ body {
   background-color: #fcdfa9;
 }
 
-img {
+img, #display {
   display: block;
   float: left;
   border: 2px solid #fff;
@@ -11,3 +11,7 @@ img {
   margin: 20px;
   padding: 15px;
 }
+
+/* .hidden {
+  visibility: hidden;
+}  */
