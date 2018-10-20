@@ -5,7 +5,7 @@ const hero = {
   inventory: [],
   health: 10,
   weapon: {
-    type: "sword",
+    type: "dagger",
     damage: 2
   }
 };
@@ -22,10 +22,16 @@ inn.addEventListener("click", function(event) {
   return rest(hero);
 })
 
-function pickUpItem(){
+function pickUpItem(heroObj, obj){
+  return heroObj.inventory.push(obj);
 
 }
+const dagger = document.getElementById("dagger");
+dagger.addEventListener("click", function(event){
+  return pickUpItem(hero, hero.weapon)
+})
 
+console.log(hero)
 function equipWeapon(){
   
 }
