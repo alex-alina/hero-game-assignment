@@ -22,7 +22,8 @@ inn.addEventListener("click", function(event) {
   return rest(hero);
 })
 
-function pickUpItem(){
+function pickUpItem(heroObj, obj){
+  return heroObj.inventory.push(obj);
 
 }
 
