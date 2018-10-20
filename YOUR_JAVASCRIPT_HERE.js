@@ -9,7 +9,6 @@ const hero = {
     damage: 2
   }
 };
-// console.log(hero)
 
 function rest(obj){
   obj.health = 10;
@@ -35,8 +34,12 @@ dagger.addEventListener("click", function(event){
   pickUpItem(hero, newWeapon)
 })
 
-console.log(hero)
-function equipWeapon(){
-  
+function equipWeapon(heroObj){
+  if(heroObj.inventory.length > 0) {
+    heroObj.weapon = heroObj.inventory[0];
+  }
+ 
 }
+
+
 
