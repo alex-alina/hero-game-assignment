@@ -17,9 +17,7 @@ function rest(obj){
 
 const inn = document.getElementById("inn");
 inn.addEventListener("click", function(event) {
-  // hero.health = 10;
-  // return hero.health;
-  return rest(hero);
+ rest(hero);
 })
 
 function pickUpItem(){
