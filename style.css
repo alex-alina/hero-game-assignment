@@ -2,7 +2,7 @@ body {
   background-color: #fcdfa9;
 }
 
-img, #display {
+img, #display, #change-hero{
   display: block;
   float: left;
   border: 2px solid #fff;
@@ -12,6 +12,3 @@ img, #display {
   padding: 15px;
 }
 
-/* .hidden {
-  visibility: hidden;
-}  */

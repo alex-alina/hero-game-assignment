@@ -1,21 +1,24 @@
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <title>Mocha Tests</title>
-    <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-
   <!-- YOUR HTML HERE -->
   <img id="inn" src="http://www.clker.com/cliparts/S/r/B/n/R/A/cartoon-house-md.png" alt="a little inn">
   <img id="dagger" src="https://files.gathersheet.com/images/sticker/character/warrior-land/17.png" alt="cool warrior dagger">
   <img id="bag" src="https://techflourish.com/images/app-money-clipart.png" alt="equipment bag">
-  <div id="display" class="hidden"></div>
-  
-  
-  
+  <div id="display"></div>
+  <div id="change-hero">
+    <p>What's your hero's name?</p>
+    <form id="newHeroName" onsubmit="return false">
+      <input id="newName" type="text" placeholder="Add your hero's name here">
+    </form>
+  </div>
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
   <div id="mocha"></div>
@@ -26,6 +29,6 @@
   <script>mocha.setup('bdd')</script>
   <script src="YOUR_JAVASCRIPT_HERE.js"></script>
   <script src="game_logic.test.js"></script>
-
 </body>
+
 </html>

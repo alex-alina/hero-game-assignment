@@ -82,3 +82,6 @@ return showStats;
 }
 
 displayStats();
+
+
+//change hero name - to be done / work in progress
