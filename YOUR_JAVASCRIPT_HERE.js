@@ -31,15 +31,20 @@ const newWeapon = {
 
 const dagger = document.getElementById("dagger");
 dagger.addEventListener("click", function(event){
-  pickUpItem(hero, newWeapon)
+  pickUpItem(hero, newWeapon);
 })
 
 function equipWeapon(heroObj){
   if(heroObj.inventory.length > 0) {
     heroObj.weapon = heroObj.inventory[0];
   }
- 
 }
+
+const bag = document.getElementById("bag");
+bag.addEventListener("click", function(event){
+  equipWeapon(hero);
+})
+
 
 
 
