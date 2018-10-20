@@ -10,8 +10,9 @@ const hero = {
   }
 };
 
-function rest(){
-
+function rest(obj){
+  obj.health = 10;
+  return obj;
 }
 
 function pickUpItem(){
