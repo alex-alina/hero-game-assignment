@@ -1,4 +1,3 @@
-// Write your JS here
 const hero = {
   name: "Merk",
   heroic: true,
@@ -45,10 +44,6 @@ bag.addEventListener("click", function (event) {
   equipWeapon(hero);
 })
 
-//bonus
-//#1 write your hero's name, health, weapontype, weapon damage to the page
-//this code is not DRY enough, yet
-
 function displayStats(){
 const h1El = document.createElement("h1");
 const h1Node = document.createTextNode("My Hero:");
@@ -70,7 +65,6 @@ const pDamage = document.createElement("p");
 const pDamageNode = document.createTextNode(`Damage: ${hero.weapon.damage}`)
 pDamage.appendChild(pDamageNode);
 
-
 const showStats = document.getElementById("display");
 showStats.appendChild(h1El);
 showStats.appendChild(pName);
@@ -82,6 +76,3 @@ return showStats;
 }
 
 displayStats();
-
-
-//change hero name - to be done / work in progress
