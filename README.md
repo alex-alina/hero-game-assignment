@@ -1,8 +1,8 @@
 # Beginner JavaScript & DOM manipulation assignment
 
-## Tech stack
+### Tech stack
 * JavaScript
 * HTML/CSS
 
-## License
+### License
 MIT Licence - Copyright &copy; 2018 - Alina Rusu
